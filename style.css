@@ -1,0 +1,161 @@
+body {
+    text-align: center;
+    margin: 0px;
+
+}
+
+
+
+.menu {
+    position: fixed;
+    /* fixed is used to set the content fixed on the corner eventhough we scroll whereas, sticky needs to show where it should be fixed (like top=100px)  */
+    background-color: white;
+
+    width: 100%;
+    margin-top: 0;
+    /* width=1oo%(browser's 100%) is given to bring the corner items to center(to understand more,change white color to black),whereas margintop is to remove the gap above the content*/
+
+}
+
+.links {
+    display: inline;
+    /* display:inline is used to arrange the vertical contents(block elements) into horizontal contents(inline elements) */
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+}
+
+
+
+
+/* Pseudo Class (IMPORTANT)-   It is used to give elements(html tags) a Special Style(like Hover mouse)*/
+/* Syntax-     selector(.links): pseudo-class(HOVER){ property: value } */
+
+.links:hover {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+
+    /* 2px=x direction   2px=y direction    2px=Z    color */
+    text-shadow: 2px 2px 2px violet;
+}
+
+
+
+/* (IMPORTANT) It is for smooth scroll movement */
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+#welcome {
+    /* background-color/background: linear-gradient(color,color);  is used to adjust the gradient  */
+    background: linear-gradient(aqua, aquamarine);
+    color: darkblue;
+}
+
+
+.profile {
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-weight: 500;
+    /* font-weight is similar to Bold tag */
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+#name {
+    font-size: 60px;
+    line-height: 1.2;
+    font-family: 'Dancing Script', cursive;
+
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+
+
+
+
+
+#bio {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 30px;
+}
+
+
+.line {
+    height: 6px;
+    background-color: blue;
+    width: 70px;
+    margin: auto;
+    /* auto is used to adjust the contents automatically according to the conditions of your browser */
+    /* Here giving auto;  aligns the line in center because we already set textalign: center in the body */
+}
+
+p {
+    font-size: 25px;
+}
+
+
+
+
+
+
+#writings a {
+    /* descentant selector type; */
+    /* using a again because i dont need shadow on the link where i gave earlier to menu */
+    text-shadow: none;
+    text-decoration: underline;
+    color: crimson;
+
+}
+
+#writings a:hover {
+    color: darkblue;
+}
+
+
+
+
+
+#contact {
+    background-color: firebrick;
+}
+
+#contact iframe {
+    /* descentant selector type; */
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contact_1 h3 {
+    display: inline;
+    /* inline is used to arrange in a side by side line */
+
+}
+
+
+.contact_1 a {
+    text-shadow: none;
+    color: white;
+
+}
